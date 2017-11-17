@@ -10,16 +10,22 @@ Dans ce readme je vais egalement mettre quelque explication concernant le System
 *Les couleurs signifient les differentes dérivations de l'axiome de début*
 
 
+**Expliquant maintenant comment avoir ces derivations.**
+
 ## Etape 1 : Grammaire formelle décrivant la croissance (code ADN)
 
-*(En prenant exemple de droite)*
-
 La grammaire formelle sera constituée :
-  * D'un alphabet A={ X, Y, + , - }
+  * D'un alphabet A={ X, Y, F }
   * D'un axiome point de départ de l'expression u0 = X
   * De règles:  
-    X = X+Y++Y-X--XX-Y+ 
-    Y = -X+YY++Y+X--X-Y 
-    + = +
-    - = -
+    X = XFXYYXFX
+    Y = Y
+    F = F
+    
+    
+## Etape 2 : Dérivation de l'expression
+
+u0 = X
+u1 = XFXYYXFX
+u2 = XFXYYXFX F XFXYYXFX Y Y XFXYYXFX F XFXYYXFX
 
