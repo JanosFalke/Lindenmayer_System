@@ -46,3 +46,4 @@ F : tourner à droite de 60°
 ![ExempleU1](https://i.imgur.com/vRExKIL.png) 
 ![ExempleU2](https://i.imgur.com/DXpZrO8.png) 
 
+*L'angle de départ du dessin est 0° donc nous commencerons à tracer en allant vers la droite de l’écran.*
