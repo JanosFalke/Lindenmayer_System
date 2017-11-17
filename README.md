@@ -17,5 +17,4 @@ La grammaire formelle sera constituée :
 
   * X = X+Y++Y-X--XX-Y+
   * Y = -X+YY++Y+X--X-Y
-  * + = +
-  * - = -
+  + = + & - = -
