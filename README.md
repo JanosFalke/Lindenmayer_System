@@ -14,8 +14,8 @@ Dans ce readme je vais egalement mettre quelque explication concernant le System
 
 *(En prenant exemple à droite)*
 La grammaire formelle sera constituée :
+  * D'un alphabet A={ X, Y, + , - }
+  * D'un axiome point de départ de l'expression u0 = X
+  * De règles: * X = X+Y++Y-X--XX-Y+ & + = +
+  * Y = -X+YY++Y+X--X-Y & - = -
 
-  * X = X+Y++Y-X--XX-Y+
-  * Y = -X+YY++Y+X--X-Y
-  
-  + = + & - = -
