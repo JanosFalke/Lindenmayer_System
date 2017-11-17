@@ -19,5 +19,6 @@ La grammaire formelle sera constituée :
   * D'un axiome point de départ de l'expression u0 = X
   * De règles:  
     X = X+Y++Y-X--XX-Y+ & + = +
+    
     Y = -X+YY++Y+X--X-Y & - = -
 
