@@ -8,3 +8,14 @@ Dans ce readme je vais egalement mettre quelque explication concernant le System
 ![GrandArbreLSystem](https://i.imgur.com/SeZZImQ.png) ![FormesLSystem](https://i.imgur.com/KaJltKo.png)
 
 *Les couleurs signifient les differentes dérivations de l'axiome de début*
+
+
+## Etape 1 : Grammaire formelle décrivant la croissance (code ADN)
+
+*(En prenant exemple à droite)*
+La grammaire formelle sera constituée :
+
+  * X = X+Y++Y-X--XX-Y+
+  * Y = -X+YY++Y+X--X-Y
+  * + = +
+  * - = -
