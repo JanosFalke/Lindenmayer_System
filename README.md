@@ -42,11 +42,7 @@ F : tourner à droite de 60°
 
 
 
-![ExempleU0](https://i.imgur.com/fYhbFCK.png) 
-u0
+![ExempleU0](https://i.imgur.com/nRF1oX2.png) 
+![ExempleU1](https://i.imgur.com/vRExKIL.png) 
+![ExempleU2](https://i.imgur.com/UaLpFzc.png) 
 
-![ExempleU1](https://i.imgur.com/eqynLKg.png) 
-u1
-
-![ExempleU2](https://i.imgur.com/9rfrwhF.png) 
-u2
