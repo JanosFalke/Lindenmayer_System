@@ -18,11 +18,9 @@ La grammaire formelle sera constituée :
   * D'un alphabet A={ X, Y, F }
   * D'un axiome point de départ de l'expression u0 = X
   * De règles:  
-    X = XFXYYXFX
-    
-    Y = Y
-    
-    F = F
+    + X = XFXYYXFX
+    + Y = Y
+    + F = F
     
     
 ## Etape 2 : Dérivation de l'expression
@@ -44,6 +42,6 @@ F : tourner à droite de 60°
 
 
 
-![ExempleU0](https://i.imgur.com/SeZZImQ.png)
-![ExempleU1](https://i.imgur.com/SeZZImQ.png)
-![ExempleU2](https://i.imgur.com/SeZZImQ.png)
+![ExempleU0](https://i.imgur.com/fYhbFCK.png) u0
+![ExempleU1](https://i.imgur.com/eqynLKg.png) u1
+![ExempleU2](https://i.imgur.com/9rfrwhF.png) u2
