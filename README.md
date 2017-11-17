@@ -19,7 +19,9 @@ La grammaire formelle sera constituée :
   * D'un axiome point de départ de l'expression u0 = X
   * De règles:  
     X = XFXYYXFX
+    
     Y = Y
+    
     F = F
     
     
