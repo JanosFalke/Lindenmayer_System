@@ -26,6 +26,22 @@ La grammaire formelle sera constituée :
 ## Etape 2 : Dérivation de l'expression
 
 u0 = X
+
 u1 = XFXYYXFX
+
 u2 = XFXYYXFX F XFXYYXFX Y Y XFXYYXFX F XFXYYXFX
 
+
+## Etape 3 : interprétation graphique
+
+X : avancer et tracer un trait 
+
+Y : tourner à gauche de 60° 
+
+F : tourner à droite de 60°
+
+
+
+![ExempleU0](https://i.imgur.com/SeZZImQ.png)
+![ExempleU1](https://i.imgur.com/SeZZImQ.png)
+![ExempleU2](https://i.imgur.com/SeZZImQ.png)
