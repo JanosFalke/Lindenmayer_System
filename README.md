@@ -12,10 +12,12 @@ Dans ce readme je vais egalement mettre quelque explication concernant le System
 
 ## Etape 1 : Grammaire formelle décrivant la croissance (code ADN)
 
-*(En prenant exemple à droite)*
+*(En prenant exemple de droite)*
+
 La grammaire formelle sera constituée :
   * D'un alphabet A={ X, Y, + , - }
   * D'un axiome point de départ de l'expression u0 = X
-  * De règles: * X = X+Y++Y-X--XX-Y+ & + = +
-  * Y = -X+YY++Y+X--X-Y & - = -
+  * De règles:  
+    X = X+Y++Y-X--XX-Y+ & + = +
+    Y = -X+YY++Y+X--X-Y & - = -
 
