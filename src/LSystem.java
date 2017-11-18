@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class LSystem {
 
-    private String axiome;
+    public static String axiome;
     private HashMap<Character, String> regles;
     private String expCourante;
     private int comptChar = 0;      //Compteur des caracteres dans l'axiome  
@@ -15,7 +15,7 @@ public class LSystem {
     private ArrayList<Integer> nombreCharDerivation;
     private int comptCoul = 0;  //Compteur pour changer la couleur des derivations
     private int nbDeriv = 0;  //Nombre des derivations differentes 
-    private Logo l = new Logo(350, 200, 90, Color.BLACK, Logo.PEN_DOWN, 20);
+    private Logo l = new Logo(400, 230, 90, Color.BLACK, Logo.PEN_DOWN, 15);
 
     public LSystem(String ax) {
         /* definition regle derivation */
@@ -31,8 +31,8 @@ public class LSystem {
         //this.axiome = "X+Y-X";             //Exemple 2
         //this.axiome = "a";                 //Exemple 3
         //this.axiome = "X";                  //Exemple 4
-        this.axiome = ax;       //initialisation avec un parametre
-
+        LSystem.axiome = ax;       //initialisation avec un parametre
+        
         //Stocker les differentes regles
         // Exemple de base
         this.regles.put('X', "X+Y++Y-X--XX-Y+");
@@ -118,13 +118,15 @@ public class LSystem {
                     break;
                  */
 
+                
                 case '+':
                     l.rotG(alea(20, 30));
                     break;
                 case '-':
                     l.rotD(alea(20, 30));
                     break;
-
+                
+                
                 // EXEMPLE 1+2
                 case '[':
                     l.memo();
@@ -141,14 +143,16 @@ public class LSystem {
                     l.av();
                     break;
                  */
- /* 
+  
+                /*
                 case '+':
-                    l.rotG(90);
+                    l.rotD(60);
                     break;
                 case '-':
-                    l.rotD(90);
+                    l.rotG(60);
                     break;
-                 */
+                */
+                    
                 //Exemple 3 
                 case 'a':
                     l.av();
@@ -191,11 +195,9 @@ public class LSystem {
 
             //Changer la couleur pour chaque derivations
             if (this.nbDeriv < this.nombreCharDerivation.size()) {
-                if (comptCoul == this.nombreCharDerivation.get(nbDeriv)) {
                     l.setCouleurAlea(new Color((int) (Math.random() * 0x1000000))); //mettre une couleur aleatoire
                     this.nbDeriv++; //pour savoir sur quelle derivation on se trouve
                     this.comptCoul = 0; //remettre le compteur a 0 pour traiter les derivations suivantes
-                }
             }
         
 

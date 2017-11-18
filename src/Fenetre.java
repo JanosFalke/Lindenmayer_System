@@ -8,11 +8,11 @@ import java.util.ArrayList;
 
 public class Fenetre extends JFrame implements ActionListener , MouseListener
 {
-    // 3 panneaux constituant la fenêtre    
+    // 3 panneaux constituant la fenï¿½tre    
     private JPanel zoneDessin;            // zone de dessin central ou on va dessiner
     private JPanel p1;                    // zone boutons hauts
     private JPanel p2;                    // zone boutons bas  
-    
+   
     private ArrayList <Segment> mem;
    
     
@@ -21,28 +21,29 @@ public class Fenetre extends JFrame implements ActionListener , MouseListener
     public Fenetre(String titre, int largeur, int hauteur) 
     {
         super(titre);
-        // placer ici l'initialisation de vos structures de données ------------------------------        
+        // placer ici l'initialisation de vos structures de donnï¿½es ------------------------------        
         this.mem = new ArrayList <Segment> ();
-        
+    
            
         //----------------------------------------------------------------------------------------
-        // Construction de la fenêtre
+        // Construction de la fenï¿½tre
         getContentPane().setLayout(new BorderLayout());   // gestionnaire de mise en page automatique
         setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
                                  
         mise_en_page( largeur, hauteur );   // on place les boutons et la zone de dessin ...
     
-        repaint();                           // on dessine l'ensemble     
+        repaint();                           // on dessine l'ensemble  
     }
     
 
-// ASSEMBLAGE PARTIES FENETRE : la fenetre est constituée de trois parties Panel Nord : boutons ; Sud : boutons; Centre: zone de zoneDessin
+// ASSEMBLAGE PARTIES FENETRE : la fenetre est constituï¿½e de trois parties Panel Nord : boutons ; Sud : boutons; Centre: zone de zoneDessin
     private void mise_en_page(int maxX, int maxY) 
     {
         //--------------------------------------------------------------------
         // insertion boutons du haut
         this.p1 = new JPanel(new GridLayout());
+        ajouteBouton("Derive", p1);
            	  
   		  
         
@@ -72,15 +73,15 @@ public class Fenetre extends JFrame implements ActionListener , MouseListener
         setVisible(true);
     }
 
-// AFFICHAGE A L ECRAN : tout ce qui est dans le paint() sera à l'ecran   
-    public void paint(Graphics g)  // dessin de la fenêtre générale
+// AFFICHAGE A L ECRAN : tout ce qui est dans le paint() sera ï¿½ l'ecran   
+    public void paint(Graphics g)  // dessin de la fenï¿½tre gï¿½nï¿½rale
     {
          this.p1.repaint();  // on redessine les boutons hauts
          this.p2.repaint();  // on redessine les boutons bas
             
          g= this.zoneDessin.getGraphics(); // on recupere le contexte graphique du panel de dessin
         
-         // c'est ici qu'il faut mettre les elements à afficher  
+         // c'est ici qu'il faut mettre les elements ï¿½ afficher  
          for(int i=0; i< this.mem.size() ; i++ )
          {  
             Segment s = this.mem.get(i);    
@@ -97,9 +98,14 @@ public class Fenetre extends JFrame implements ActionListener , MouseListener
     
 // QUELQUES OUTILS
    
-    // Procédure d'arrêt
+    // Procï¿½dure d'arrï¿½t
     private void quitter() {
         System.exit(0);
+    }
+    
+    private void deriver() {
+        testLsystem.l.derivation();
+        testLsystem.l.interpretation();
     }
     
     // Effacer le plan de dessin
@@ -119,14 +125,16 @@ public class Fenetre extends JFrame implements ActionListener , MouseListener
     
        
        
-// GESTION DES ACTIONS SUITE A UN APPUIS SUR BOUTON : cette methode est declenchée si Un bouton quelconque est appuyé
+// GESTION DES ACTIONS SUITE A UN APPUIS SUR BOUTON : cette methode est declenchï¿½e si Un bouton quelconque est appuyï¿½
     public void actionPerformed(ActionEvent e)  // on associe l'evenement souris sur bouton avec l'execution d'un sous prg
 	 {
       String c = e.getActionCommand();     // on capte l'evenement : nom du bouton !
         
+        if(c.equals("Derive")) deriver();
       					
-		if (c.equals("Effacer")) effacer();
-      if (c.equals("Quitter")) quitter();		
+        if (c.equals("Effacer")) effacer();
+        
+        if (c.equals("Quitter")) quitter();		
 		  										
 	   repaint();    
     } 

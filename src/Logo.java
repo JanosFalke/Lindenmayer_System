@@ -33,7 +33,7 @@ public class Logo {
     
     /*  variables de classe communes entre tous les objets-------------------------------*/
     protected static Stack <Logo> p = new Stack <Logo> ();        // memo des contextes partag�es entre objets
-    protected static Fenetre f = new Fenetre("Lindenmayer", 800, 600); //fenetre commune aux objets Logo
+    protected static Fenetre f = new Fenetre("Lindenmayer", 1100, 600); //fenetre commune aux objets Logo
 
     
         
