@@ -36,9 +36,9 @@ u2 = XFXYYXFX F XFXYYXFX Y Y XFXYYXFX F XFXYYXFX
 
 X : avancer et tracer un trait 
 
-Y : tourner à gauche de 60° 
+F : tourner à gauche de 60° 
 
-F : tourner à droite de 60°
+Y : tourner à droite de 60°
 
 
 
